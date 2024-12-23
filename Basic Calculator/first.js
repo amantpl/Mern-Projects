@@ -13,5 +13,4 @@ button.addEventListener(`click`,()=>{
     const result=nume1+nume2;
     const res=document.getElementById(`res`);
     res.innerHTML=`Result: `+result;
-
-})
+});
