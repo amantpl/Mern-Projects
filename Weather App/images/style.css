@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.card {
+    width: 100%;
+    max-width: 480px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform .3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    color: #555;
+    padding: 12px 25px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    font-size: 18px;
+    transition: width 0.3s ease;
+
+}
+
+.search input:focus {
+    width: 75%;
+}
+
+.search button {
+    background: #ebfffc;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+    margin-left: 1rem;
+}
+
+.search button:hover {
+    background: #55e4e0;
+}
+
+.search button img {
+    width: 20px;
+}
+
+.weather-icon {
+    width: 150px;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+.weather h1 {
+    font-size: 70px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.weather h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -10px;
+    text-transform: capitalize;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.col img:hover {
+    transform: scale(1.1);
+}
+
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+    font-weight: 500;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ff4d4d;
+    display: none;
+}
+
