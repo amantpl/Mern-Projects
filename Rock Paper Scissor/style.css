@@ -1,0 +1,174 @@
+/* Global reset and box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    background-color: #070730; /* Darker navy for better contrast */
+    color: #ffffff; /* Pure white for text */
+    font-size: 3.5rem; /* Slightly smaller for better scaling */
+    font-family: 'Arial', Helvetica, sans-serif;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 3px solid #ffffff; /* Adds a clean separator */
+}
+
+/* Image styles */
+img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures image is neatly cropped */
+    border: 3px solid #070730; /* Matches header color for consistency */
+    transition: transform 0.3s ease; /* Smooth hover animation */
+}
+
+img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Rock and scissor image spacing */
+#rock {
+    margin-right: 20px;
+}
+
+#scissor {
+    margin-left: 20px;
+}
+
+/* Button styles */
+button {
+    border-radius: 50%;
+    border: 2px solid #070730;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    color: #070730;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #070730;
+    color: #ffffff;
+    transform: scale(1.1); /* Highlight button on hover */
+}
+
+/* Container for layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Wraps content for smaller screens */
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+
+/* Scoreboard styles */
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    text-align: center;
+    gap: 2rem; /* Creates equal spacing between items */
+    margin-top: .2rem;
+    color: #070730;
+    font-weight: bold;
+}
+
+/* Specific margin adjustments for score labels */
+#you, #me {
+    margin-right: 50px; /* Reduced margin for better balance */
+}
+
+#comp, #com {
+    margin-left: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    img {
+        height: 150px;
+        width: 150px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    .score {
+        font-size: 3rem;
+        flex-direction: column; /* Stack scores vertically */
+        gap: 1rem;
+    }
+
+    #you, #me, #comp, #com {
+        margin: 0; /* Removes unnecessary margins for small screens */
+    }
+}
+
+
+#reset{
+    display: flex;
+    justify-content: center;
+}
+
+#reset button{
+    border-radius: 0%;
+    background-color: greenyellow;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+#winner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 4rem; /* Increased size for prominence */
+    color: #b0e0e6; /* Soft pastel blue for a calming effect */
+    font-weight: bold;
+    text-transform: uppercase; /* Adds emphasis to the text */
+    letter-spacing: 0.1em; /* Slightly spaced letters for a cleaner look */
+    background: linear-gradient(45deg, #b0e0e6, #a8dadc); /* Soft gradient of pastel blue and teal */
+    -webkit-background-clip: text; /* Clips the background to text for gradient effect */
+    background-clip: text;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for subtle depth */
+}
+
+/* Optional: Smooth glowing effect if you'd like a very subtle effect */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #b0e0e6, 0 0 10px #b0e0e6, 0 0 15px #a8dadc;
+    }
+    100% {
+        text-shadow: 0 0 10px #b0e0e6, 0 0 20px #b0e0e6, 0 0 25px #a8dadc;
+    }
+}
+
+#winner:hover {
+    animation: glow 2s ease-in-out infinite alternate; /* Subtle glow on hover */
+}
+
+#fis{
+    display: flex;
+    justify-content: center;
+}
+
+#msg{
+    font-size: 2rem;
+    margin-top: 1rem;
+
+}
