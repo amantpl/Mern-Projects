@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology Insights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Astrology Insights ✨</h1>
+        <p>Discover your zodiac sign and personalized astrological insights! 🌌</p>
+        <form id="astroForm">
+            <input type="text" id="name" placeholder="First Name" autocomplete="off" required>
+            <input type="text" id="surname" placeholder="Last Name" autocomplete="off" required>
+            <input type="number" id="date" placeholder="Date of Birth (1-31)" min="1" max="31" autocomplete="off" required>
+            <input type="number" id="month" placeholder="Month of Birth (1-12)" min="1" max="12" autocomplete="off" required>
+            <input type="number" id="year" placeholder="Year of Birth" autocomplete="off" required>
+            <button type="submit">Reveal Insights 🌟</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="first.js"></script>
+</body>
+</html>
